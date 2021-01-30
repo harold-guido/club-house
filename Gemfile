@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Simple Forms
 gem 'simple_form', '~> 5.0', '>= 5.0.3'
 # Use Bulma
-gem 'simple_form', '~> 5.0', '>= 5.0.3'
+gem 'bulma-rails', '~> 0.9.1'
 # Use Devise
 gem 'devise', '~> 4.7', '>= 4.7.3'
 
