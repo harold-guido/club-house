@@ -12,4 +12,5 @@ class User < ApplicationRecord
     presence: true
 
   has_many :posts
+  has_many :ratings
 end
