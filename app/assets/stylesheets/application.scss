@@ -22,3 +22,19 @@
 .level:not(:last-child) {
   margin-bottom: 0;
 }
+
+.navbar-brand a.navbar-item:hover {
+  background-color: #00d1b2;
+}
+
+.button.is-primary.is-outlined {
+  border-color: white,
+}
+
+.button.is-primary {
+  background-color: #00947e;
+}
+
+.button.is-primary:hover {
+  background-color: #00d1b2;
+}
