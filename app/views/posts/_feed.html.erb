@@ -1,8 +1,5 @@
 <div class="column is-four-fifths">
   <% @posts.each do |post| %>
-    <% if user_signed_in? %>
-      <% if current_user.username != post.user.username %>
-
         <div class="box">
           <article class="media">
             <div class="media-content">
@@ -20,15 +17,7 @@
 
                     <%= link_to post, class: "level-item" do %>
                       <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
-                    <% end %>
-
-              <% if user_signed_in? && current_user.username == post.user.username %>
-                    <%= link_to edit_post_path(post), class: "level-item" do %>
-                      <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                    <% end %>
-                    <%= link_to post, method: :delete, data: { confirm: "Are you sure?" } do %>
-                      <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
-                    <% end %>
+        
                   </div>
                 </nav>
               <% end %>
@@ -36,7 +25,5 @@
           </article>
         </div>
 
-      <% end %>
-    <% end %>
   <% end %>
 </div>
