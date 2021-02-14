@@ -1,12 +1,10 @@
 <section class="section">
   <div class="container">
-    <div class="columns">
+    <div class="columns is-centered">
+      <%= render 'feed' %>
       <% if user_signed_in? %>
-        <%= render 'users_posts' %>
-      <% else %>
-        <%= render 'feed' %>
+        <%= render 'user_feed' %>
       <% end %>
-      <%= render 'random_post' %>
     </div>
   </div>
 </section>
